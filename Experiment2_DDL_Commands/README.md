@@ -104,124 +104,177 @@ CREATE TABLE Table_Name (
 ```
 
 **Question 1**
---
--- Paste Question 1 here
+
+<img width="808" height="381" alt="image" src="https://github.com/user-attachments/assets/75e1a743-5b08-4075-ae26-186c47e7aba1" />
+
 
 ```sql
--- Paste your SQL code below for Question 1
+INSERT INTO Student_details(RollNo,Name,Gender,Subject,MARKS)VALUES(202,'Ella King','F','Chemistry',87);
+INSERT INTO Student_details(RollNo,Name,Gender,Subject,MARKS)VALUES(203,'James Bond','M','Literature',78)
 ```
 
 **Output:**
 
-![Output1](output.png)
+<img width="1271" height="251" alt="image" src="https://github.com/user-attachments/assets/6eb80522-88c3-418c-8295-95661b0bb948" />
+
 
 **Question 2**
----
--- Paste Question 2 here
+
+<img width="850" height="378" alt="image" src="https://github.com/user-attachments/assets/cb6a2468-9c4c-4e8d-b4a6-8c874a83d5bc" />
+
 
 ```sql
--- Paste your SQL code below for Question 2
+CREATE TABLE item(
+item_id INT PRIMARY KEY,
+item_desc TEXT NOT NULL,
+rate INT NOT NULL,
+icom_id TEXT(4),
+CONSTRAINT fk_company
+    FOREIGN KEY(icom_id)
+    REFERENCES Company(com_id)
+    ON UPDATE CASCADE
+    ON DELETE CASCADE
+);
+
 ```
 
 **Output:**
 
-![Output2](output.png)
+<img width="1283" height="323" alt="image" src="https://github.com/user-attachments/assets/01ebba4f-c3c6-4b30-b694-c44eb3be5b9a" />
+
 
 **Question 3**
 ---
--- Paste Question 3 here
+<img width="935" height="302" alt="image" src="https://github.com/user-attachments/assets/62085d2a-0f18-4a93-9ad5-ed978af395ec" />
+
 
 ```sql
--- Paste your SQL code below for Question 3
+ALTER TABLE EMPLOYEES ADD COLUMN Date_of_joining Date;
+ALTER TABLE EMPLOYEES RENAME COLUMN job_title TO Designation;
+
 ```
 
 **Output:**
 
-![Output3](output.png)
+<img width="1275" height="351" alt="image" src="https://github.com/user-attachments/assets/e07723b3-038a-4ea0-9479-e17bc6cf40f0" />
+
 
 **Question 4**
 ---
--- Paste Question 4 here
+<img width="745" height="292" alt="image" src="https://github.com/user-attachments/assets/21253da8-b742-4f67-9d1b-7b793a106d8e" />
+
 
 ```sql
--- Paste your SQL code below for Question 4
+INSERT INTO Customers(CustomerID,Name,Address,Email)
+SELECT CustomerID,Name,Address,Email FROM Old_Customers;
 ```
 
 **Output:**
 
-![Output4](output.png)
+<img width="1268" height="281" alt="image" src="https://github.com/user-attachments/assets/90cce75e-5624-4c0d-a53a-c53b70e547cd" />
+
 
 **Question 5**
 ---
--- Paste Question 5 here
+<img width="839" height="343" alt="image" src="https://github.com/user-attachments/assets/25bf6f19-a44b-45f5-806a-80533ac6f58f" />
+
 
 ```sql
--- Paste your SQL code below for Question 5
+CREATE TABLE Members(
+MemberID INTEGER,
+MemberName TEXT,
+JoinDate DATE);
 ```
 
 **Output:**
 
-![Output5](output.png)
+<img width="1323" height="311" alt="image" src="https://github.com/user-attachments/assets/8d463fd5-6a85-489c-a06d-b7d14695d552" />
+
 
 **Question 6**
 ---
--- Paste Question 6 here
+<img width="1320" height="194" alt="image" src="https://github.com/user-attachments/assets/77d86e46-fa0a-410c-9990-d821601f6d5b" />
+
 
 ```sql
--- Paste your SQL code below for Question 6
+CREATE TABLE jobs(
+job_id INT,
+job_title VARCHAR(100)DEFAULT '',
+min_salary INT DEFAULT 8000,
+max_salary INT DEFAULT NULL);
 ```
 
 **Output:**
 
-![Output6](output.png)
+<img width="1325" height="284" alt="image" src="https://github.com/user-attachments/assets/910ed40e-286d-4fb6-b613-024757eab487" />
+
 
 **Question 7**
 ---
--- Paste Question 7 here
+<img width="858" height="332" alt="image" src="https://github.com/user-attachments/assets/0d326c23-b60a-49e3-8f96-d8d9ec5ccd9d" />
+
 
 ```sql
--- Paste your SQL code below for Question 7
+INSERT INTO Employee(EmployeeID,Name,Position)
+VALUES(4,'Emily White','Analyst');
 ```
 
 **Output:**
 
-![Output7](output.png)
+<img width="965" height="306" alt="image" src="https://github.com/user-attachments/assets/51419ecb-6a74-4888-9886-0f9116710ba1" />
+
 
 **Question 8**
 ---
--- Paste Question 8 here
+![WhatsApp Image 2025-09-27 at 09 12 17_abaf5661](https://github.com/user-attachments/assets/b6e75e45-18f1-4a49-a160-ed2530c1c4eb)
+
 
 ```sql
--- Paste your SQL code below for Question 8
+ALTER TABLE customer
+ADD discount DECIMAL(5,2);
 ```
 
 **Output:**
 
-![Output8](output.png)
+![WhatsApp Image 2025-09-27 at 09 13 54_b23f3c38](https://github.com/user-attachments/assets/2eb2ceab-581f-4307-97d2-6ba5d91af6dd)
+
 
 **Question 9**
 ---
--- Paste Question 9 here
+<img width="1252" height="393" alt="image" src="https://github.com/user-attachments/assets/9eefadf7-a663-4f86-9afd-7ffb8535e8f2" />
+
 
 ```sql
--- Paste your SQL code below for Question 9
+ALTER TABLE Employee ADD COLUMN department_id INTEGER ;
+ALTER TABLE Employee ADD COLUMN manager_id INTEGER DEFAULT NULL ; 
 ```
 
 **Output:**
 
-![Output9](output.png)
+<img width="1278" height="286" alt="image" src="https://github.com/user-attachments/assets/8c19c52f-0ab2-40d1-b6ab-0297aff848c7" />
+
 
 **Question 10**
 ---
--- Paste Question 10 here
+<img width="1316" height="275" alt="image" src="https://github.com/user-attachments/assets/6deda020-18a7-4f8d-a8c3-7b684286bc45" />
+
 
 ```sql
--- Paste your SQL code below for Question 10
+CREATE TABLE Bonuses(
+BonusID INTEGER PRIMARY KEY,
+EmployeeID INTEGER,
+BonusAmount REAL CHECK(BonusAmount>0),
+BonusDate DATE,
+Reason TEXT NOT NULL,
+CONSTRAINT fk_employee
+    FOREIGN KEY(EmployeeID)
+    REFERENCES Employees(EmployeeID))
 ```
 
 **Output:**
 
-![Output10](output.png)
+<img width="1334" height="259" alt="image" src="https://github.com/user-attachments/assets/0e28dc12-e91f-40c3-bcc6-75351c8022d9" />
+
 
 
 ## RESULT
